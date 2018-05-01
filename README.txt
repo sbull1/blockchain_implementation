@@ -37,9 +37,9 @@ What to expect:
 Design choice:
     In most blockchain blockchain programs, programmers typically choose to hash to hexidecimal;
     however, in our program, we chose to hash to base 10. Furthermore, when we hash each block, we
-    call the built in hash function in C++. Additionally, when we set the difficulty, it corresponds 
-    to the number of 1's we'd like to see in the first few digits of the hash value. This varies from 
-    many tutorials, where programmers may choose to count the number of 0's instead.
+    call the built in hash function in C++. Additionally, when we set the difficulty, it 
+    corresponds to the number of 1's we'd like to see in the first few digits of the hash value. 
+    This varies from many tutorials, where programmers may choose to count the number of 0's instead.
     
     
 Overall structure:
@@ -65,37 +65,37 @@ Overall structure:
     
         As previously mentioned, the most important/influential attribute of the BlockChain class 
     is the value of the difficulty. This value is important in the process of mining a new Block
-    as it determines the sort of specificity we are looking for in our hash. In our implementation, 
-    the difficulty corresponds to the number of 1’s we desire to obtain in the first few digits of 
-    our hash. In order to make sure we are receiving a hash value that obeys the difficulty level, 
-    we have created a mineBlock function. This function primarily consists of a do while loop which 
-    will run as long as the current hash does not meet the requirements specified by the difficulty. 
-    The idea is that the higher the difficulty, the more time will be spent in the mineBlock function, 
-    and therefore the longer it will take to mine a block.
+    as it determines the sort of specificity we are looking for in our hash. In our 
+    implementation, the difficulty corresponds to the number of 1’s we desire to obtain in the 
+    first few digits of our hash. In order to make sure we are receiving a hash value that obeys 
+    the difficulty level, we have created a mineBlock function. This function primarily consists 
+    of a do while loop which will run as long as the current hash does not meet the requirements 
+    specified by the difficulty. The idea is that the higher the difficulty, the more time will 
+    be spent in the mineBlock function, and therefore the longer it will take to mine a block.
     
     
 Future Goals:
     Below is a list of future goals or ideas we would explore in the future:
-        1. As previously mentioned, this is a simplified implementation of a BlockChain. Perhaps in
-           the future, we would want to make this into a database. Then, we could see how different
-           computers mine blocks, and how the blockchain would handle multiple users.
+        1. As previously mentioned, this is a simplified implementation of a BlockChain. Perhaps 
+           in the future, we would want to make this into a database. Then, we could see how 
+           different computers mine blocks, and how the blockchain would handle multiple users.
         2. We could consider implementing mining rewards. Currently, those that mine blocks for 
-           applications such as Bitcoin recieve some sort of incentive/reward. It would be interesting 
-           to add this as a feature in our code.
-        3. We could work on applying this to financial transactions. As previously mentioned, many
-           cryptocurrencies use blockchains to keep track of transaction records. This is something
-           that we could consider using our program to complete. For example, a user could input 
-           information on what they want to buy and how much it costs, then the process of mining
-           a block would begin.
+           applications such as Bitcoin recieve some sort of incentive/reward. It would be 
+           interesting to add this as a feature in our code.
+        3. We could work on applying this to financial transactions. As previously mentioned, 
+           many cryptocurrencies use blockchains to keep track of transaction records. This is 
+           something that we could consider using our program to complete. For example, a user 
+           could input information on what they want to buy and how much it costs, then the 
+           process of mining a block would begin.
     
 Bibliography:
 
 Crosby, M., Nachiappan, Pattanayak, P., & Kalyanaraman, V. (2016). BlockChain Technology: 
-        Beyond Bitcoin. Applied Innovation Review,(2), 6-19. Retrieved from http://scet.berkeley.edu/wp-
-        content/uploads/AIR-2016-Blockchain.pdf
+        Beyond Bitcoin. Applied Innovation Review,(2), 6-19. Retrieved from 
+        http://scet.berkeley.edu/wp-content/uploads/AIR-2016-Blockchain.pdf
 
 Peters, G. W., Panayi, E., & Chapelle, A. (2015). Trends in Crypto-Currencies and Blockchain 
-        Technologies: A Monetary Theory and Regulation Perspective. SSRN Electronic Journal,3(3), 1-43. doi:
-        10.2139/ssrn.2646618
+        Technologies: A Monetary Theory and Regulation Perspective. SSRN Electronic Journal,
+        3(3), 1-43. doi: 10.2139/ssrn.2646618
 
         
