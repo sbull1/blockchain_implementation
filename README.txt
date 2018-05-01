@@ -39,7 +39,8 @@ Design choice:
     however, in our program, we chose to hash to base 10. Furthermore, when we hash each block, we
     call the built in hash function in C++. Additionally, when we set the difficulty, it 
     corresponds to the number of 1's we'd like to see in the first few digits of the hash value. 
-    This varies from many tutorials, where programmers may choose to count the number of 0's instead.
+    This varies from many tutorials, where programmers may choose to count the number of 0's 
+    instead.
     
     
 Overall structure:
