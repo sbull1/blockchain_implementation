@@ -46,11 +46,11 @@ Overall structure:
     The majority of this program is based on the Block and BlockChain classes:
     
         To keep track of the attributes of each block, we created a Block class. This class will 
-    store the public variables that each block’s hash depends on: timestamp, data, and the previous 
-    hash, and a nonce variable. The timestamp will hold the current time to ensure the uniqueness 
-    of a hash. The data will be a string that is designated in the main program. The previous hash 
-    is obtained at the instantiation of a new block. Finally, the nonce variable is used in the 
-    process of mining.
+    store the public variables that each block’s hash depends on: timestamp, data, and the 
+    previous hash, and a nonce variable. The timestamp will hold the current time to ensure the
+    uniqueness of a hash. The data will be a string that is designated in the main program. The 
+    previous hash is obtained at the instantiation of a new block. Finally, the nonce variable 
+    is used in the process of mining.
     
         The BlockChain class is mainly comprised of a vector of Blocks from the Block class. It 
     also contains functions to add new blocks as well as receive information on the previous 
